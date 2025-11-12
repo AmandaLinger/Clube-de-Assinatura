@@ -1,0 +1,72 @@
+.title-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.title{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: var(--text-body);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.icon-estrela{
+    height: 20px;
+    width: 20px;
+}
+
+.subtitle-pagethree{
+    font-size: 14px;
+    color: var(--text-body);
+}
+
+.pin-foto{
+    height: 85.2px;
+    width: 74.89px;
+}
+
+.livro-foto{
+    height: 207.68px;
+    width: 157.19px;
+}
+
+.marcadoramarelo-foto, .marcadorroxo-foto{
+    height: 180px;
+    width: 58px;
+} 
+
+@media screen and (width >= 1280px){
+    h2{
+        font-size: 32px;
+    }
+    .icon-estrela{
+        height: 32px;
+        width: 32px;
+    }
+    .subtitle-pagethree{
+        font-size: 16px;
+    }
+
+    .pin-foto{
+        height: 254px;
+        width: 222px;
+    }
+
+    .livro-foto{
+        height: 617px;
+        width: 467px;
+    }
+
+    .marcadoramarelo-foto, .marcadorroxo-foto{
+        height: 536px;
+        width: 172px;
+    } 
+}
