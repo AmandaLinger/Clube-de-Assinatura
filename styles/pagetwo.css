@@ -1,0 +1,49 @@
+.pagetwo-container{
+    padding: 0px 20px;
+
+    .icon-livro{
+        height: 40px;
+        width: 40px;
+    }
+    .icon-ouija{
+        height: 32px;
+        width: 32px;
+    }
+    .icon-bola-cristal{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+p strong{
+    color: var(--blue-light);
+}
+.text-pagetwo{
+    color: var(--text-body);
+    text-align: center;
+}
+
+
+@media screen and (width >= 1280px){
+
+    .pagetwo-container{
+        padding: 0px 48px;
+    }
+    .icon-livro{
+        height: 80px;
+        width: 80px;
+    }
+    .icon-ouija{
+        height: 72px;
+        width: 72px;
+    }
+    .icon-bola-cristal{
+        height: 65.45px;
+        width: 65.45px;
+    }
+
+    .text-pagetwo{
+        font-size: 32px;
+    }
+}
+
