@@ -1,0 +1,55 @@
+.pagefour-title-container{
+    max-width: 224px;
+}
+
+.card{
+    background: var(--shape-stroke);
+
+    padding: 32px 32px 28px 32px;
+}
+
+.nome-assinatura{
+    color: var(--blue-light);
+    font-size: 16px;
+    line-height: auto;
+    font-weight: bold;
+}
+
+.title-pagefour{
+    color: var(--text-body);
+    font-size: 24px;
+    line-height: auto;
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+.beneficios{
+    color: var(--text-body);
+    gap: 8px;
+    display: flex;
+}
+
+.valor{
+    font-size: 40px;
+    line-height: auto;
+    color: var(--text-title);
+    font-weight: bold;
+}
+
+.valor-descricao{
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--text-label);
+}
+
+.icon-pagefour{
+    height: 14px;
+    width: 14px;
+}
+
+.p-beneficios{
+    font-size: 12px;
+    line-height: 140%;
+}
