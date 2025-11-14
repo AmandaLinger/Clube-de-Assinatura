@@ -21,15 +21,21 @@ header{
     background-repeat: no-repeat;
 }
 
-.texts{
-    margin-top: 48px;
+#texts{
+    margin: 48px auto 0; 
     gap: 16px;
+
+    display: grid;
+    align-items: center;
+    text-align: center;
 }
+
 h1{
     color: var(--text-title);
     font-size: 28px;
     font-weight: bold;
-    text-align: center  
+    text-align: center;
+    padding-bottom: 16px;
 }
 
 .subtitle{
@@ -37,6 +43,8 @@ h1{
     line-height: 140%;
     font-size: 14px;
     text-align: center;
+
+    padding-bottom: 130px;
 }
 
 
@@ -44,7 +52,7 @@ h1{
     .pageone{
         padding: 48px;
     }
-    .texts{
+    #texts{
         margin-top: 164px;
         max-width: 656px;
         padding: 20px;
@@ -56,10 +64,11 @@ h1{
     }
     h1{
         font-size: 48px;
+        padding-bottom: 0px;
     }
 
     .subtitle{
-        padding-bottom: 140px;
+        padding-bottom: 180px;
         font-size: 20px;
         line-height: 140%;
     }

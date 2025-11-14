@@ -1,49 +1,81 @@
-.pagetwo-container{
-    padding: 0px 20px;
-
-    .icon-livro{
-        height: 40px;
-        width: 40px;
-    }
-    .icon-ouija{
-        height: 32px;
-        width: 32px;
-    }
-    .icon-bola-cristal{
-        height: 40px;
-        width: 40px;
-    }
+.pagetwo-container {
+    padding: 48px 20px;
+    display: flex;
+    flex-flow: column;
 }
 
-p strong{
-    color: var(--blue-light);
+/* ESTILOS DAS IMAGENS — FORA DO NESTING */
+.icon-livro {
+    height: 40px;
+    width: 40px;
+    padding-bottom: 8px;
+    margin-left: 252px;
 }
-.text-pagetwo{
-    color: var(--text-body);
+
+.icon-ouija {
+    height: 32px;
+    width: 32px;
+    margin-top: -6px;
+    margin-left: 10px;
+}
+
+.icon-bola-cristal {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.icons-container {
+    display: flex;
+    gap: 260px;
+}
+
+.text-pagetwo {
     text-align: center;
+    color: transparent; /* esconde o texto original */
+    position: relative;
 }
 
+/* TEXTO PADRÃO */
+.text-pagetwo::after {
+    display: block;
+    content: "Receba todo mês um livro surpresa do seu tema favorito, acompanhado de brindes exclusivos que tornarão a sua experiência literária ainda mais encantadora.";
+    color: var(--text-body);
+}
 
-@media screen and (width >= 1280px){
+/* MEDIA QUERY CORRIGIDO E COMPATÍVEL */
+@media screen and (min-width: 1280px) {
 
-    .pagetwo-container{
+    .pagetwo-container {
         padding: 0px 48px;
     }
-    .icon-livro{
+
+    .icon-livro {
         height: 80px;
         width: 80px;
+        margin-top: 96px;
     }
-    .icon-ouija{
+
+    .icon-ouija {
         height: 72px;
         width: 72px;
     }
-    .icon-bola-cristal{
+
+    .icon-bola-cristal {
         height: 65.45px;
         width: 65.45px;
     }
 
-    .text-pagetwo{
+    .text-pagetwo {
         font-size: 32px;
     }
-}
 
+    /* TEXTO ALTERADO NA TELA MAIOR */
+    .text-pagetwo::after {
+        content: "Receba todo mês um livro surpresa do seu tema favorito, acompanhado de brindes exclusivos que tornarão a sua experiência literária encantadora";
+    }
+
+    .icons-container {
+        gap: 1000px;
+    }
+}
