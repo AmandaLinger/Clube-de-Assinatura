@@ -1,11 +1,19 @@
 .pagefour-title-container{
-    max-width: 224px;
+
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
 }
 
 .card{
-    background: var(--shape-stroke);
+    background: var(--shape-base);
+    border: 2px solid var(--shape-stroke);
 
     padding: 32px 32px 28px 32px;
+    height: 400px ;
+    width: 272px;
+
+    border-radius: 24px;
 }
 
 .nome-assinatura{
@@ -13,16 +21,21 @@
     font-size: 16px;
     line-height: auto;
     font-weight: bold;
+    margin-bottom: 24px;
 }
 
 .title-pagefour{
     color: var(--text-body);
+    max-width: 224px;
     font-size: 24px;
     line-height: auto;
     font-weight: bold;
 
+    display: flex;
     text-align: center;
+    align-content: center;
 
+    margin: 100px 0px 48px 0px;
 }
 
 .beneficios{
@@ -36,12 +49,24 @@
     line-height: auto;
     color: var(--text-title);
     font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.valor-container{
+    display: flex;
+
+    gap: 4px;
+}
+.valor-tempo{
+    font-size: 16px;
+    color: var(--text-body);
 }
 
 .valor-descricao{
     font-size: 14px;
     line-height: 140%;
     color: var(--text-label);
+    margin-bottom: 80px;
 }
 
 .icon-pagefour{
@@ -52,4 +77,19 @@
 .p-beneficios{
     font-size: 12px;
     line-height: 140%;
+}
+
+.card-container{
+    display: flex;
+    gap: 16px;
+}
+.beneficios{
+    margin: 6px 0px 6px 0px;
+}
+.btn-assinar{
+    margin-top: 18px;
+    background-color: var(--blue-base);
+
+    font-size: 14px;
+    padding: 8px 20px;
 }
