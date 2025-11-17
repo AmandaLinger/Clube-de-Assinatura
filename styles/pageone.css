@@ -13,6 +13,9 @@ header{
     padding: 20px;
 
 }
+.logo-icon{
+    content: url(../assets/icon/logo-symbol.svg);
+}
 
 #pageone-container{
     background: url(../assets/img/hero-background.png);
@@ -51,6 +54,9 @@ h1{
 @media screen and (width >= 1280px){
     .pageone{
         padding: 48px;
+    }
+    .logo-icon{
+    content: url(../assets/icon/logo-horizontal.svg);
     }
     #texts{
         margin-top: 164px;

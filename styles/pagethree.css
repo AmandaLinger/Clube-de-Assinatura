@@ -5,6 +5,10 @@
     gap: 8px;
 }
 
+.pagethree-container{
+    padding: 0px 0px 80px 0px;
+}
+
 .title{
     gap: 12px;
     display: flex;
@@ -31,19 +35,63 @@ h2{
 .pin-foto{
     height: 85.2px;
     width: 74.89px;
+
+    z-index: 1;
+
+    position: absolute; 
+    left: 35%;  
+    padding-top: 100px;
 }
 
 .livro-foto{
     height: 207.68px;
     width: 157.19px;
+    
+    z-index: 0;
+    position: absolute;
+    left: 30%;
+
+    
+}
+
+.images-container{
+
+    padding: 64px 0px;
+
 }
 
 .marcadoramarelo-foto, .marcadorroxo-foto{
     height: 180px;
     width: 58px;
+
+    z-index: 1;
+    position: absolute;
+    left: 52%;
+    padding-top: 10px;
 } 
 
+.legend-container{
+    color: var(--text-body);
+}
+
+
+.images-container:hover{
+    .marcadoramarelo-foto{
+        transform: rotate(30deg);
+    }
+
+    .pin-foto{
+        transform: rotate(-30deg);
+    }
+}
+
+
+
+
 @media screen and (width >= 1280px){
+    .pagethree-container{
+    padding: 0px 0px 420px 0px;
+    }
     h2{
         font-size: 32px;
     }
@@ -58,15 +106,25 @@ h2{
     .pin-foto{
         height: 254px;
         width: 222px;
+
+        padding-top: 320px;
     }
 
     .livro-foto{
         height: 617px;
         width: 467px;
+
+        top:1600px;
     }
 
     .marcadoramarelo-foto, .marcadorroxo-foto{
         height: 536px;
         width: 172px;
+
+        padding-top: -10px;
     } 
+
+    .images-container{
+        padding: 88px 0px;
+    }
 }

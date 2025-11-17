@@ -2,6 +2,8 @@
     padding: 48px 40px;
     display: flex;
     flex-flow: column;
+
+    margin-bottom: 80px;
 }
 
 /* ESTILOS DAS IMAGENS — FORA DO NESTING */
@@ -48,7 +50,8 @@
     .pagetwo-container {
         padding: 0px 48px;
 
-        margin-bottom: 100px;
+        margin-top: 180px;
+        margin-bottom: 240px;
     }
 
 
@@ -56,9 +59,7 @@
         height: 80px;
         width: 80px;
         margin-top: 96px;
-        margin-left: 550px;
-
-        display: flex;
+        margin-left: 650px;
     }
 
     .icon-ouija {
