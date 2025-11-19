@@ -1,0 +1,66 @@
+#btn-redesocial img{
+    height: 24px;
+}
+
+.pagefive-container{
+    background-image: url(../assets/img/book-trace-background.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#logo-pagefive{
+    padding-top: 100px;
+    padding-bottom: 4px;
+}
+
+.logo-pagefive img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 158px;
+}
+
+.icon-line{
+    padding-bottom: 8px;
+    width: 311px;
+}
+
+.btn-redesocial{
+    display: flex;
+    gap: 28px;
+    padding-bottom: 40px;
+}
+#btn-redesocial{
+    height: 20px;
+    background: transparent;
+    border: none;
+}
+
+.footer-container{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+
+
+.subtitle-footer{
+    font-family: var(--ff-raleway);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-body);
+
+    margin-bottom: 20px;
+}
+
+.itens-footer{
+    color: var(--blue-light);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}

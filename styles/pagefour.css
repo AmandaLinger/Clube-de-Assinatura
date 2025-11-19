@@ -55,11 +55,14 @@
 .valor-container{
     display: flex;
 
+    align-items: center;
     gap: 4px;
 }
 .valor-tempo{
     font-size: 16px;
     color: var(--text-body);
+    font-weight: bold;
+    line-height: auto;
 }
 
 .valor-descricao{
@@ -82,6 +85,8 @@
 .card-container{
     display: flex;
     gap: 16px;
+    margin-bottom: 120px;
+    justify-content: center;
 }
 .beneficios{
     margin: 6px 0px 6px 0px;
@@ -89,6 +94,10 @@
 .btn-assinar{
     margin-top: 18px;
     background-color: var(--blue-base);
+    color: var(--text-title);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
 
     font-size: 14px;
     padding: 8px 20px;
