@@ -11,7 +11,6 @@
     align-items: center;
     flex-flow: column;
 }
-
 #logo-pagefive{
     padding-top: 100px;
     padding-bottom: 4px;
@@ -66,4 +65,29 @@
 }
 
 @media screen and (min-width: 1280px){
+    #logo-pagefive{
+    padding-top: 0px;
+    padding-bottom: 4px;
+    }
+    .pagefive-container{
+        padding: 120px 60px 80px 60px ;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+
+        background-size: cover;
+    }
+    .logo-pagefive img{
+    width: 264px;
+    }
+    #btn-redesocial{
+        height: 24px;
+    }
+    .subtitle-footer{
+        font-size: 18px;
+    }
+    .itens-footer{
+        font-size: 16px;
+    }
 }

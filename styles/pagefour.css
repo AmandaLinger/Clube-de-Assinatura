@@ -246,14 +246,16 @@
         content: url(../assets/icon/coelho.svg);
         position: absolute;
         top: 2610px;
-        left: 500px;
+        left: 550px;
+        z-index: -1;
     }
 
     .icon-estrelas-3::after{
         content: url(../assets/icon/two-stars.svg);
         position: absolute;
-        left: 345px;
-        bottom: -30px;
+        left: 1120px;
+        top: 3185px;
+        transform: rotate(10deg);
     }
 
     .btn-assinar{
