@@ -1,19 +1,89 @@
 .pagefour-title-container{
 
     display: flex;
-    justify-content: center; /* centraliza horizontal */
-    align-items: center;     /* centraliza vertical */
+    justify-content: center;
+    align-items: center; 
 }
-
-.card{
+.card-1{
     background: var(--shape-base);
     border: 2px solid var(--shape-stroke);
 
     padding: 32px 32px 28px 32px;
     height: 400px ;
     width: 272px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 
     border-radius: 24px;
+    z-index: -1;
+}
+
+.card-2{
+    background: var(--shape-base);
+    border: 2px solid var(--shape-stroke);
+
+    padding: 32px 32px 28px 32px;
+    height: 400px ;
+    width: 272px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    border-radius: 24px;
+    margin-bottom: 130px;
+}
+
+.card-3{
+    background: var(--shape-base);
+    border: 2px solid var(--shape-stroke);
+
+    padding: 32px 32px 28px 32px;
+    height: 400px ;
+    width: 272px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    border-radius: 24px;
+    z-index: -1;
+}
+
+.card-2-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.card-2:hover{
+    background-color: var(--shape-hover);
+    z-index: 2;
+}
+.card-1:hover{
+    background: var(--shape-hover);
+    z-index: 2;
+}
+.card-3:hover{
+    background-color: var(--shape-hover);
+    z-index: 2;
+}
+
+
+.assinatura-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    font-family: var(--ff-raleway);
+    margin-bottom: 10px;
+}
+
+.assinatura-bottom{
+    margin-bottom: 24px;
 }
 
 .nome-assinatura{
@@ -21,7 +91,26 @@
     font-size: 16px;
     line-height: auto;
     font-weight: bold;
-    margin-bottom: 24px;
+}
+
+.nome-assinatura-pink{
+    color: var(--pink-base);
+    font-size: 16px;
+    line-height: auto;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-btn{
+    background-color: var(--shape-stroke);
+    color: var(--text-body);
+    font-weight: bold;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 999px;
 }
 
 .title-pagefour{
@@ -69,7 +158,6 @@
     font-size: 14px;
     line-height: 140%;
     color: var(--text-label);
-    margin-bottom: 80px;
 }
 
 .icon-pagefour{
@@ -87,6 +175,10 @@
     gap: 16px;
     margin-bottom: 120px;
     justify-content: center;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+
+    
 }
 .beneficios{
     margin: 6px 0px 6px 0px;
@@ -101,4 +193,76 @@
 
     font-size: 14px;
     padding: 8px 20px;
+}
+
+.btn-assinar-pink{
+    background-color: var(--pink-base);
+
+    margin-top: 18px;
+    color: var(--text-title);
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+.centralizar-btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1280px){
+    .card-1{
+        transform: rotate(-8deg);
+        margin-top: 60px;
+    }
+    .card-3{
+        transform: rotate(8deg);
+        margin-top: 60px;
+    }
+
+    .card-container{
+        gap: 0px;
+        margin-top: 60px;
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+    .card-2-container{
+        display: flex;
+        align-items: space-between;
+        justify-content: space-between;
+    }
+    .icon-estrelas-1::after{
+        content: url(../assets/icon/two-stars.svg);
+        position: absolute;
+        left: -30px;
+        top: -30px;
+    }
+
+    .icon-coelho::after{
+        content: url(../assets/icon/coelho.svg);
+        position: absolute;
+        top: 2610px;
+        left: 500px;
+    }
+
+    .icon-estrelas-3::after{
+        content: url(../assets/icon/two-stars.svg);
+        position: absolute;
+        left: 345px;
+        bottom: -30px;
+    }
+
+    .btn-assinar{
+        padding: 14px 70px;
+        font-size: 16px;
+    }
+
+    .btn-assinar-pink{
+        padding: 14px 70px;
+        font-size: 16px;
+    }
 }
