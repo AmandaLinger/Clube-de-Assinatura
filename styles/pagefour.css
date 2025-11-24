@@ -173,7 +173,7 @@
 .card-container{
     display: flex;
     gap: 16px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     justify-content: center;
     overflow-x: scroll;
     flex-wrap: nowrap;
